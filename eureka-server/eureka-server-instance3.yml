@@ -1,11 +1,11 @@
+server:
+  port: 8673
 spring:
   profiles: instance3
   security:
     user:
       name: admin
       password: admin
-server:
-  port: 8673
 eureka:
   instance:
     preferIpAddress: false

@@ -1,11 +1,11 @@
+server:
+  port: 8671
 spring:
   profiles: instance1
   security:
     user:
       name: admin
       password: admin
-server:
-  port: 8671
 eureka:
   instance:
     preferIpAddress: false
