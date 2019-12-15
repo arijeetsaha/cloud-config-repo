@@ -2,6 +2,8 @@ server:
   port: 8671
 spring:
   profiles: instance1
+  application:
+    name: eureka-server
   security:
     user:
       name: admin
