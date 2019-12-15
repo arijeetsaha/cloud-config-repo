@@ -1,9 +1,7 @@
 server:
     port: 8082
 spring:
-    profiles: client2
-    application:
-        name: eureka-client
+    profiles: instance2
 eureka:
     instance:
         instanceId: ${spring.application.name}-2

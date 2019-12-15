@@ -1,13 +1,11 @@
 spring:
-  profiles: server1
-  application:
-    name: eureka-server
+  profiles: instance1
   security:
     user:
       name: admin
       password: admin
 server:
-  port: ${PORT:8671}
+  port: 8671
 eureka:
   instance:
     preferIpAddress: false

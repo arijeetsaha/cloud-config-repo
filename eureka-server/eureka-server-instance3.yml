@@ -1,22 +1,20 @@
 spring:
-  profiles: server2
-  application:
-    name: eureka-server
+  profiles: instance3
   security:
     user:
       name: admin
       password: admin
 server:
-  port: ${PORT:8672}
+  port: 8673
 eureka:
   instance:
     preferIpAddress: false
-    hostname: peer2
+    hostname: peer3
     metadataMap:
-      zone: zone2
+      zone: zone3
   client:
-    serviceUrl:
-      defaultZone: http://admin:admin@peer1:8671/eureka/,http://admin:admin@peer3:8673/eureka/
+    service-url:
+      defaultZone: http://admin:admin@peer1:8671/eureka/,http://admin:admin@peer2:8672/eureka/
     registerWithEureka: true
     fetchRegistry: true
     #https://www.baeldung.com/spring-cloud-netflix-eureka#transportexception-cannot-execute-request-on-any-known-server
